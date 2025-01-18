@@ -7,7 +7,7 @@ module.exports = async function (context, req) {
     const darkColor = req.query.dark_colour || (req.body && req.body.dark_colour) || '000000';
     const brightColor = req.query.bright_colour || (req.body && req.body.bright_colour) || 'ffffff';
 
-    if (!targetUrl) {
+    if (!targetUrl) {1
         context.res = {
             status: 400,
             body: "Please provide a valid 'target_url' parameter."
